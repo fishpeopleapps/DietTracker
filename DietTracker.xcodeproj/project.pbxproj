@@ -14,7 +14,8 @@
 		DF23D8452B8C10AE0072191A /* LeafyGreensView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF23D8442B8C10AE0072191A /* LeafyGreensView.swift */; };
 		DF23D8472B8C10BB0072191A /* FruitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF23D8462B8C10BB0072191A /* FruitsView.swift */; };
 		DF23D8492B8C10C50072191A /* WaterTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF23D8482B8C10C50072191A /* WaterTracker.swift */; };
-		DFC6FE4C2B91845600DFADB5 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC6FE4B2B91845600DFADB5 /* Components.swift */; };
+		DFC6FE4C2B91845600DFADB5 /* Component-Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC6FE4B2B91845600DFADB5 /* Component-Background.swift */; };
+		DFC6FE4E2B9209E000DFADB5 /* Component-FillImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC6FE4D2B9209E000DFADB5 /* Component-FillImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +27,8 @@
 		DF23D8442B8C10AE0072191A /* LeafyGreensView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafyGreensView.swift; sourceTree = "<group>"; };
 		DF23D8462B8C10BB0072191A /* FruitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsView.swift; sourceTree = "<group>"; };
 		DF23D8482B8C10C50072191A /* WaterTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTracker.swift; sourceTree = "<group>"; };
-		DFC6FE4B2B91845600DFADB5 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		DFC6FE4B2B91845600DFADB5 /* Component-Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Component-Background.swift"; sourceTree = "<group>"; };
+		DFC6FE4D2B9209E000DFADB5 /* Component-FillImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Component-FillImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +65,8 @@
 				DF23D8442B8C10AE0072191A /* LeafyGreensView.swift */,
 				DF23D8462B8C10BB0072191A /* FruitsView.swift */,
 				DF23D8482B8C10C50072191A /* WaterTracker.swift */,
-				DFC6FE4B2B91845600DFADB5 /* Components.swift */,
+				DFC6FE4B2B91845600DFADB5 /* Component-Background.swift */,
+				DFC6FE4D2B9209E000DFADB5 /* Component-FillImage.swift */,
 				DF23D8382B8C03550072191A /* ContentView.swift */,
 				DF23D83A2B8C03560072191A /* Assets.xcassets */,
 				DF23D83C2B8C03560072191A /* Preview Content */,
@@ -150,8 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF23D8452B8C10AE0072191A /* LeafyGreensView.swift in Sources */,
-				DFC6FE4C2B91845600DFADB5 /* Components.swift in Sources */,
+				DFC6FE4C2B91845600DFADB5 /* Component-Background.swift in Sources */,
 				DF23D8392B8C03550072191A /* ContentView.swift in Sources */,
+				DFC6FE4E2B9209E000DFADB5 /* Component-FillImage.swift in Sources */,
 				DF23D8492B8C10C50072191A /* WaterTracker.swift in Sources */,
 				DF23D8372B8C03550072191A /* DietTrackerApp.swift in Sources */,
 				DF23D8472B8C10BB0072191A /* FruitsView.swift in Sources */,

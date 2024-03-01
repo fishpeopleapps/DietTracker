@@ -11,37 +11,22 @@ import SwiftUI
 
 struct WaterTracker: View {
     @AppStorage("waterConsumed") private var waterConsumed = 0.0
-    @AppStorage("waterRequired") private var waterRequired = 140.0
+    @AppStorage("waterGoal") private var waterGoal = 140.0
     @AppStorage("lastDrink") private var lastDrink = Date.now.timeIntervalSinceReferenceDate
     @State private var showingDrinksMenu = false
     var goalProgress: Double {
-        waterConsumed / waterRequired
+        waterConsumed / waterGoal
     }
     var statusText: Text {
-            return Text("\(Int(waterConsumed))oz / \(Int(waterRequired))oz")
+        return Text("\(Int(waterConsumed))oz / \(Int(waterGoal))oz")
     }
     var body: some View {
         ZStack {
             Background(screen: .water)
             
             VStack(spacing: 0) {
+                FillImage(fillImageName: "drop.fill", emptyImageName: "drop", progress: goalProgress)
                 
-                Image(systemName: "drop.fill")
-                    .resizable()
-                    .font(.title.weight(.ultraLight))
-                    .scaledToFit()
-                    .foregroundStyle(
-                        .linearGradient(stops: [Gradient.Stop(color: .clear, location: 0.0),
-                                                Gradient.Stop(color: .clear, location: CGFloat(1 - goalProgress)),
-                                                Gradient.Stop(color: .white, location: CGFloat(1 - goalProgress))],
-                                        startPoint: .top, endPoint: .bottom)
-                    )
-                    .overlay(
-                        Image(systemName: "drop")
-                            .resizable()
-                            .font(.title.weight(.ultraLight))
-                            .scaledToFit()
-                    )
                     .onTapGesture {
                         showingDrinksMenu.toggle()
                     }
@@ -58,11 +43,12 @@ struct WaterTracker: View {
                 }
                 .padding()
             }
+            .padding()
         }
         .foregroundStyle(.white)
         .alert("Add Drink", isPresented: $showingDrinksMenu) {
-                ForEach([4, 8, 12, 16, 20, 24], id: \.self) { number in
-                    Button("\(number)oz") { add(Double(number))}
+            ForEach([4, 8, 12, 16, 20, 24], id: \.self) { number in
+                Button("\(number)oz") { add(Double(number))}
             }
             Button("Cancel", role: .cancel) { }
         }
