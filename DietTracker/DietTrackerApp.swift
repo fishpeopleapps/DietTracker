@@ -11,7 +11,25 @@ import SwiftUI
 struct DietTrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                ContentView()
+                    .tabItem {
+                        Label("TODO", systemImage: "checklist.unchecked")
+                    }
+                LeafyGreensView()
+                    .tabItem {
+                        Label("Leafy Greens", systemImage: "birthday.cake")
+                    }
+                FruitsView()
+                    .tabItem {
+                        Label("Fruits", systemImage: "carrot")
+                    }
+                WaterTracker()
+                    .tabItem {
+                        Label("Water", systemImage: "drop")
+                    }
+            }
+            
         }
     }
 }

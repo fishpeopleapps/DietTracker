@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LeafyGreensView.swift
 //  DietTracker
 //
 //  Created by Kimberly Brewer on 2/25/24.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LeafyGreensView: View {
     var body: some View {
         ZStack {
-            Background(screen: .task)
+            Background(screen: .greens)
         }
     }
 }
 
 #Preview {
-    ContentView()
+    LeafyGreensView()
 }
